@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Sihle Nsimba" />
+    <title>Multimedia and Registration Form Webpage</title>
+  </head>
+  <body>
+    <header>
+      <h1>Multimedia and Registration Form</h1>
+      <p>
+        Enjoy playing music and watching videos while filling in the
+        registration form
+      </p>
+    </header>
+    <main>
+      <section id="multimedia-webpage">
+        <h2>Multimedia Webpage</h2>
+        <div>
+          <audio
+            src="https://cdn.pixabay.com/download/audio/2025/02/19/audio_3b45f7d855.mp3?filename=gardens-stylish-chill-303261.mp3"
+            controls
+          >
+            Your browser does not support this element
+          </audio>
+        </div>
+        <br /><br />
+        <div>
+          <video
+            controls
+            width="640"
+            height="360"
+            poster="https://images.unsplash.com/photo-1614531341773-3bff8b7cb3fc?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&dl=thomas-bennie-1jlJrr4XGkU-unsplash.jpg"
+          >
+            <source
+              src="https://cdn.pixabay.com/video/2025/01/19/253423_tiny.mp4?download"
+              type="video/mp4"
+            />
+            <source
+              src="https://cdn.pixabay.com/video/2025/01/19/253423_tiny.ogg?download"
+            />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <br /><br />
+      </section>
+      <section id="registration-form">
+        <form action="#">
+          <h2>Registration Form</h2>
+          <div>
+            <label for="fName">Full Name:</label
+            ><input type="text" required name="fName" id="fName" />
+          </div>
+          <br /><br />
+          <div>
+            <label for="email">Email Address:</label
+            ><input type="email" required id="email" />
+          </div>
+          <br /><br />
+          <div>
+            <label for="password">Password:</label
+            ><input
+              type="password"
+              required
+              minlength="8"
+              maxlength="25"
+              id="password"
+            />
+          </div>
+          <br /><br />
+          <div>
+            <label for="age">Age:</label
+            ><input type="number" required min="13" max="100" id="age" />
+          </div>
+          <br /><br />
+          <div>
+            <p>Gender</p>
+            <input type="radio" id="male" name="gender" checked /><label
+              for="male"
+              >Male</label
+            ><br />
+            <input type="radio" id="female" name="gender" /><label for="female"
+              >female</label
+            >
+          </div>
+          <br /><br />
+          <div>
+            <p>Terms and Conditions</p>
+            <input type="checkbox" checked id="terms" required /><label
+              for="terms"
+              >I accept the terms and conditions</label
+            >
+          </div>
+          <br /><br />
+          <div>
+            <button type="submit">Register</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
